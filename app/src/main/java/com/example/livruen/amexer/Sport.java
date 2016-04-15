@@ -3,7 +3,9 @@ package com.example.livruen.amexer;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -34,6 +36,17 @@ public class Sport extends AppCompatActivity {
             e.printStackTrace();
         }
         setActions();
+
+        //Puts an Image to the Action Bar
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setIcon(R.mipmap.ic_sport);
+            actionBar.setDisplayShowTitleEnabled(false); // entfernt den text von der Action bar
+            Log.i("FoodAmExer", " action bar");
+        } else {
+            Log.i("FoodAmExer", "no action bar");
+        }
     }
 
 

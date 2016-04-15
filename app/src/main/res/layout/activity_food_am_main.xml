@@ -93,7 +93,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/solferino_text"
+        android:id="@+id/mensa_text"
         android:textColor="#2ca61f"
         android:gravity="center"
         android:background="#ffffff"

@@ -1,5 +1,6 @@
 package com.example.livruen.amexer;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -23,18 +24,18 @@ public class FoodAmExer extends AppCompatActivity {
 
     private EditText limes_text;
     private EditText limes_time;
-
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_am_exer);
-
+        context = this;
         //Puts an Image to the Action Bar
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setIcon(R.mipmap.food_icon);
+            actionBar.setIcon(R.mipmap.ic_food);
             actionBar.setDisplayShowTitleEnabled(false); // entfernt den text von der Action bar
             Log.i("FoodAmExer", " action bar");
         } else {
@@ -43,8 +44,8 @@ public class FoodAmExer extends AppCompatActivity {
 
         // Initialize Objects in View
 
-        limes_text = (EditText) findViewById(R.id.solferino_text);
-        limes_text = (EditText) findViewById(R.id.solferino_time);
+        solferino_text = (EditText) findViewById(R.id.solferino_text);
+        solferino_text = (EditText) findViewById(R.id.solferino_time);
 
         limes_text = (EditText) findViewById(R.id.limes_text);
         limes_text = (EditText) findViewById(R.id.limes_time);
@@ -56,10 +57,12 @@ public class FoodAmExer extends AppCompatActivity {
 
 
 
-        //solferino_text.setText("OPEN");
+        solferino_text.setText("Lina");
         if(currentHour >= SOLFERINO_OPEN_HOUR && currentHour <= SOLFERINO_CLOSE_HOUR){
-            //  solferino_text.setText("OPEN", TextView.BufferType.EDITABLE);
+           //   solferino_text.setText("OPEN", TextView.BufferType.EDITABLE);
             //solferino_text.setTextColor(Color.GREEN);
+        } else {
+            //TODO close
         }
         if(currentHour >= LIMES_OPEN_HOUR && currentHour <= LIMES_CLOSE_HOUR){
             //limes_text.setText("OPEN", TextView.BufferType.EDITABLE);

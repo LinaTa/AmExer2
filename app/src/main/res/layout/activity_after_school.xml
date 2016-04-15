@@ -12,9 +12,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/editText_afterschool"
         android:background="@color/wolfenbuettelBlue"
-        android:text="After school"
+        android:text="after school"
         android:focusable="false"
         android:textColor="#ffffff"
         android:layout_row="0"

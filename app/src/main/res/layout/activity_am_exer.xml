@@ -26,7 +26,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentEnd="false"
             android:layout_alignParentStart="false"
-            android:id="@+id/gridLayout">
+            android:id="@+id/editText8">
 
             <ImageButton
                 android:layout_width="100dp"

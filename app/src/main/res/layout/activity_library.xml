@@ -12,9 +12,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
+        android:id="@+id/editText_library"
         android:background="@color/wolfenbuettelBlue"
-        android:text="Library"
+        android:text="library"
         android:focusable="false"
         android:textColor="#ffffff"
         android:layout_row="0"
