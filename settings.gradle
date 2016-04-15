@@ -1,0 +1,1 @@
+include ':app', ':postgresql-9.4.1208.jre6', ':jdom-2.0.6-contrib', ':jdom-2.0.6-javadoc', ':jdom-2.0.6-junit', ':jdom-2.0.6-sources', ':jdom-2.0.6', ':postgresql-9.4-1200.jdbc4'

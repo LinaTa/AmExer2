@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('postgresql-9.4-1200.jdbc4.jar'))
